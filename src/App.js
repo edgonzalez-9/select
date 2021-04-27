@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import Select from 'react-select';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const options = [
   { value: 'blues', label: 'Blues' },
@@ -12,7 +13,9 @@ const options = [
 function App() {
   return (
     <div className="App">
-      <Select options={options}/>
+      <Select className="mt-4 col-md-8 col-offset-4"
+      options={options}
+      />
     </div>
   );
 }
